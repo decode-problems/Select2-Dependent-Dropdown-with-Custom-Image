@@ -17,7 +17,7 @@ class ServiceFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->sentence(10),
+            'title' => $this->faker->sentence(5),
             'image' => rand(0, 1) == 1 ? $this->faker->imageUrl(50, 50) : null,
         ];
     }
