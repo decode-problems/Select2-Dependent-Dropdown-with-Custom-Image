@@ -130,8 +130,8 @@
                         url: @json(route('categories.index')) + '/' + start,
                         success: function (result) {
                             THIS.services = result.data;
+                            THIS.service_id = '';
                             THIS.$nextTick(() => {
-                                $('#service_id').val(null).trigger('change');
                                 $('#service_id').select2({
                                     templateSelection: formatState,
                                     templateResult: formatState,
