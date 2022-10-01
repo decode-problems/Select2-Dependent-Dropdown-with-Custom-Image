@@ -71,6 +71,7 @@
 
 @push('scripts')
     <script>
+        console.log(axios)
         function formatState(state) {
             if (!state.id) {
                 return state.text;
@@ -84,19 +85,6 @@
             $state += `<div style="margin-left: 10px;">${state.text}</div></div>`;
             return $($state);
         }
-
-        Vue.directive('select2', {
-            inserted(el) {
-                $(el).on('select2:select', () => {
-                    const event = new Event('change', {bubbles: true, cancelable: true});
-                    el.dispatchEvent(event);
-                });
-                $(el).on('select2:unselect', () => {
-                    const event = new Event('change', {bubbles: true, cancelable: true})
-                    el.dispatchEvent(event)
-                })
-            },
-        });
         new Vue({
             el: '#app',
             data: {

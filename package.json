@@ -10,5 +10,16 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^3.0.0"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue2": "^2.0.0",
+        "bootstrap": "^4.6.2",
+        "jquery": "^3.6.1",
+        "popper.js": "^1.16.1",
+        "select2": "^4.0.13",
+        "vue": "^2.7.10",
+        "vue-loader": "^17.0.0",
+        "vue-template-compiler": "^2.7.10"
     }
 }
