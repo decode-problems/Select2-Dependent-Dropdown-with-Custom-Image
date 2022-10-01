@@ -33,7 +33,7 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            vue: 'vue/dist/vue.js',
+            vue: process.env.NODE_ENV === 'production' ? 'vue/dist/vue.esm.js' : 'vue/dist/vue.js',
         },
     },
 });
