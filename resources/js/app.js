@@ -10,7 +10,8 @@ import Popper from 'popper.js';
 window.Popper = Popper;
 
 import 'bootstrap';
-import 'select2';
+import select2 from 'select2';
+select2($);
 
 $('[data-toggle="tooltip"]').tooltip();
 
